@@ -80,9 +80,21 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    color: #ffffff;
+    /* height: 100vh; */
     /* overflow: hidden; */
     margin: 0;
+    background:
+        linear-gradient(to left top, rgb(0, 0, 0) 0%
+            /*bottom-right color*/
+            , rgba(22, 187, 237, 0.5) 50%
+            /*middle color*/
+            , rgb(255, 242, 0) 100%
+            /*top-left color*/
+        ),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))
+        /*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/
+    ;
 }
 
 .container div {
