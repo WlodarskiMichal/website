@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+
     <title>Michal Wlodarski Web Page</title>
+    <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
     
@@ -13,12 +15,14 @@
         <div class="container">
 
             <nav id="navbar" class="navbar">
+                
                 <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#technologies">Technologies</a></li>
-                    <li><a href="#about-me">About me</a></li>
-                    <li><a href="https://www.github.com/wlodarskimichal" target="_blank">Github</a></li>
-                    <li><a href="https://www.linkedIn.com/in/wlodarskimichal" target="_blank">LinkedIn</a></li>
+                    <li><a href="/"><img id="logo" src="/favicon.ico" alt="logo"></a></li>
+                    <li><a class="hover-button" href="#projects">Projects</a></li>
+                    <li><a class="hover-button"  href="#technologies">Technologies</a></li>
+                    <li><a class="hover-button"  href="#about-me">About me</a></li>
+                    <li><a class="hover-button"  href="https://www.github.com/wlodarskimichal" target="_blank">Github</a></li>
+                    <li><a class="hover-button"  href="https://www.linkedIn.com/in/wlodarskimichal" target="_blank">LinkedIn</a></li>
                     <li  id="contact-nav-bar"><a href="#contact">Contact me</a></li>
                 </ul>
             </nav>
@@ -36,23 +40,24 @@
 
             </div>
 
-            <div id="technologies">
-                <p>Technologies that I'm familiar with: <br><br>
-                                • Programming languages:<br>
-                                Ruby, HTML, CSS3, JavaScript, Java, Python, Kotlin, XML<br>
-                                • Databases:<br>
-                                PostgreSQL, MongoDB, H2, Firebase<br>
-                                • Frameworks:<br>
-                                Sinatra, Express, Spring, React, Vue<br>
-                                • Methodologies:<br>
-                                Agile, TDD, Mocha, JUnit, Protractor JS, OOP & SOLID principles, RESTful API, Pair & Mob Programming, UX/UI Design<br>
-                                • Version Control:<br>
-                                GitHub <br>
-                </p>
+            <div class="technologies" id="technologies">
+                <h3>Technologies that I'm familiar with:</h3> 
+                <p class="displayed-text">• Programming languages:<br>
+                Ruby, HTML, CSS3, JavaScript, Java, Python, Kotlin, XML<br>
+                • Databases:<br>
+                PostgreSQL, MongoDB, H2, Firebase<br>
+                • Frameworks:<br>
+                Sinatra, Express, Spring, React, Vue<br>
+                • Methodologies:<br>
+                Agile, TDD, Mocha, JUnit, Protractor JS, OOP & SOLID principles, RESTful API, Pair & Mob Programming, UX/UI Design<br>
+                • Version Control:<br>
+                GitHub <br>
+                </h3>
             </div>
                 
-            <div id="about-me">
-                <p>
+            <div class="about-me" id="about-me">
+                <h3>About me</h3> 
+                <p class="displayed-text">
                     I was born in Poland, I moved quite a lot, looking for my place and better future. I started with programming when still Pokemon cards were a thing, but I couldn't grasp it back then. I tried one more time in 2014, signing myself to University, for Computer Science course, but I couldn't sustain myself financially. Finally in 2016 I fled to Edinburgh, Scotland and stayed there for almost 5 years. During this time I did some courses for programmers (Java, Full Stack Web), and when was ready for the market, Covid-19 came through, and we all stayed put. <br>
                     In late 2020 I decided to move to Germany with my fiancee, and here we are building our new center of life. I'm working hard to have my dream come true, becoming a software developer, but I was tiny bit lost for few years. Now I'm going through one Full Stack Web boot camp, hoping to understand more, and create better projects. <br><br>
 
@@ -66,8 +71,9 @@
                     I am looking for company that I can help grow as a Junior Web Developer. Or alternatively I might take some Freelance projects. I'm currently working on some local businesses websites. We can meet for a coffee, online or in 2 meters distance and chat about it.   <br><br>
                 </p>
             </div>
-            <div id="contact">
-                <p>Contact: <br>
+            <div class="contact" id="contact">
+                <h3>Contact</h3>
+                <p class="displayed-text"> <br>
                     I'm based currently in Krefeld, Germany. 
                     My German is <strong>A2.1</strong> (working on it!), my English is <strong>C2</strong>, Polish <strong>native</strong>.
                     You can contact me through <a id="mail" href="mailto:wlodarski.michal@pm.me">wlodarski.michal@pm.me</a> or call <strong>004915175393078</strong>.</p>
