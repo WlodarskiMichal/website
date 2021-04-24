@@ -2,13 +2,15 @@ const panels = document.querySelectorAll('.panel')
 
 
 
-function aboutMe() {
-    let x = document.getElementById("about-me");
+function switchActiveClass(activeClass) {
+    let x = document.getElementById(activeClass);
     panels.forEach((panel) => {
+        
         panel.classList.remove('active')
+        
     })
     x.classList.add("active")
-  } 
+} 
 
 
 

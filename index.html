@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
 
     <title>Michal Wlodarski Web Page</title>
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8a01">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
     
@@ -17,33 +20,55 @@
             <nav id="navbar" class="navbar">
                 
                 <ul>
-                    <li><a href="/"><img id="logo" onClick=main() src="/favicon.ico" alt="logo"></a></li>
+                    <li><a href="/"><img id="logo" onClick="switchActiveClass('main')" src="/favicon.svg" alt="logo"></a></li>
 
-                    <li><a class="hover-button" onClick=projects() id="projects-button" href="#projects">Projects</a></li>
+                    <li><a class="hover-button" onClick="switchActiveClass('projects')" id="projects-button">Projects</a></li>
 
-                    <li><a class="hover-button" onClick=technologies() href="#technologies">Technologies</a></li>
+                    <li><a class="hover-button" onClick="switchActiveClass('technologies')">Technologies</a></li>
 
-                    <li><a class="hover-button" onClick=aboutMe() href="#about-me">About me</a></li>
+                    <li><a class="hover-button" onClick="switchActiveClass('about-me')">About me</a></li>
+                    <li><a href="#">
+                        <img src="http://icons.iconarchive.com/icons/fasticon/angry-birds/128/yellow-bird-icon.png" 
+                        onmouseover="this.src='http://icons.iconarchive.com/icons/fasticon/angry-birds/128/red-bird-icon.png'"
+                        onmouseout="this.src='http://icons.iconarchive.com/icons/fasticon/angry-birds/128/yellow-bird-icon.png'"
+                        border="0" alt=""/></a></li>
 
                     <li><a class="hover-button"  href="https://www.github.com/wlodarskimichal" target="_blank">Github</a></li>
 
                     <li><a class="hover-button"  href="https://www.linkedIn.com/in/wlodarskimichal" target="_blank">LinkedIn</a></li>
 
-                    <li  id="contact-nav-bar"><a id="contact-nav-text" onClick=contact() class="hover-button" href="#contact">Contact me</a></li>
+                    <li  id="contact-nav-bar"><a  onClick="switchActiveClass('contact')" class="hover-button"><img id="contact-nav-img" src="/email.svg" alt="mail-picture"></a></li>
 
                 </ul>
             </nav>
 
             <div class="panel active intro" id="intro-photo-and-text">
                 <div class="image"><img id="photo-of-michal-wlodarski" src="/photo_of_michal_wlodarski.png" alt="photo-of-michal-wlodarski"></div>
-                <div class="text"><h1>Hey, welcome on my page, I'm Michal Wlodarski, and I'm a web developer.</h1></div>          
+                <div class="text"><h1>Hey, I'm Michal Wlodarski, and I'm a web developer.</h1><h2>I like to build stuff, and solve problems. <a id="contact-text" onClick="switchActiveClass('contact')" class="hover-button">Let's talk</a></h2></div>          
             </div>
         
             <div id="projects" class="panel active projects">
-                <div class="project1"><p>Project</p></div>
-                <div class="project2"><p>Project</p></div>
-                <div class="project3"><p>Project</p></div>
-                <div class="project4"><p>Project</p></div>
+                <img class="project" src="/project_photos/Brainteaser.svg" alt="Project-Trivia-Game">
+                <img class="project"  src="/project_photos/dashNet.svg" alt="project-cisco-management-website">
+                <img class="project"  src="/project_photos/travelbucket.svg" alt="project-travel-bucket-list">
+                <img class="project"  src="/project_photos/AndroidCalculator.svg" alt="project-android-calculator">
+
+                <div id="projects" class="panel active projects image">
+                    <img class="image__img" src="project_photos/androidcalculator.svg" alt="Bricks">
+                    <div class="image__overlay image__overlay--primary">
+                        <div class="image__title">Bricks</div>
+                        <p class="image__description">
+                            Here we have a brick wall.
+                        </p>
+                    </div>
+                    <img class="image__img" src="project_photos/androidcalculator.svg" alt="Bricks">
+                    <div class="image__overlay image__overlay--primary">
+                        <div class="image__title">Bricks</div>
+                        <p class="image__description">
+                            Here we have a brick wall.
+                        </p>
+                    </div>
+                </div>
 
             </div>
             
@@ -84,10 +109,10 @@
                 <p class="displayed-text"> <br>
                     I'm based currently in Krefeld, Germany. 
                     My German is <strong>A2.1</strong> (working on it!), my English is <strong>C2</strong>, Polish <strong>native</strong>.
-                    You can contact me through <a id="mail" href="mailto:wlodarski.michal@pm.me">wlodarski.michal@pm.me</a> or call <strong>004915175393078</strong>.</p>
+                    You can contact me through <a id="mail" href="mailto:wlodarski.michal@pm.me">wlodarski.michal@pm.me</a>.</p>
             </div>
         
-            <footer>&#169; Michal Wlodarski <a id="back-on-top" href="#navbar">Back on top</a><br></footer>
+
         </div>
         <script src="script.js"></script>
     </body>
