@@ -63,77 +63,68 @@ h3 {
 .navbar {
     display: flex;
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
-
-
-.navbar ul {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    list-style-type: none;
-    align-items: center;
-    margin: 0;
-    /* margin: -10px -10px; */
-    /* padding: 0; */
-    background-color: rgb(237, 205, 22);
-    /* flex: 1; */
-}
 
 /* NAVIGATION BAR */
 
 #logo {
-
+    position: fixed;
+    top: 0px;
+    left: 10px;
     width: 40px;
     height: 40px;
     /* margin-right: auto;
     margin-left: 10px; */
 }
 
-.navbar li {
+.menu {
     display: flex;
-    margin: 10px 10px;
+    /* justify-content: center; */
+    margin: 20px 20px;
     padding: 5px;
+    line-height: 70px;
 }
 
-.navbar li a {
-
-
-    /* justify-content: flex-start; */
+.menu a {
     color: black;
     text-align: center;
     padding: 8px 10px;
     text-decoration: none;
-}
-
-
-.navbar #contact-nav-bar {
-
-    background-color: rgb(237, 205, 22);
-    margin-right: 10px;
-    margin-left: auto;
-
-
-}
-
-#contact-nav-img {
     cursor: pointer;
-    width: 32px;
 }
 
-#contact-nav-text:hover {
-    color: #fff
-}
-
-#contact-text {
-    cursor: progress;
-}
-
-.hover-button:hover {
+.menu a:hover {
     color: white;
-    cursor: pointer;
+}
+
+label {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 32px;
+
+    display: none;
+    width: 26px;
+}
+
+#toggle {
+    display: none;
+}
+
+.hide-on-big-screen {
+    display: none;
+}
+
+
+
+#contact-nav-bar img {
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    width: 32px;
 }
 
 
@@ -159,19 +150,12 @@ h3 {
     /* justify-content: center; */
 }
 
-.intro h1 {
-    /* max-width: 50%; */
-    /* flex: 4; */
-    /* font-size: 2rem; */
-}
-
 .intro img {
 
     width: 150px;
-    /* flex: 1; */
+
     margin: 10px;
     padding: 10px;
-
     border-radius: 300px;
 }
 
@@ -181,35 +165,33 @@ h3 {
 .projects {
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0.1);
     padding: 20px;
+
+
     border-radius: 25px;
     width: 70%;
     /* justify-content: space-around; */
 
 }
 
-.project {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.project {}
+
+
+.projects img {
+
+
+
     border: 1px solid black;
     margin: 10px 0 10px 0;
-}
-
-
-.project img {
     border: 2px #000000;
     border: 2px solid black;
     max-width: 100%;
 }
 
-#project4 {
-    width: 40%;
-    align-self: center;
-}
 
 
 /* TECHNOLOGIES */
@@ -345,7 +327,7 @@ h3 {
 
 
 /* MOBILE PHONES OR SMALLER DISPLAYS */
-@media all and (max-width: 750px) {
+@media only screen and (max-width: 750px) {
     /* .navbar {
         position: fixed;
         top: 0;
@@ -358,8 +340,30 @@ h3 {
         margin: 10px 0 10px 0;
     }
 
-    .navbar ul {
-        display: grid;
+    .navbar {}
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu a {
+        display: block;
+        margin: 0;
+    }
+
+    #toggle:checked+.menu {
+        display: block;
+    }
+
+    #contact-nav-bar {
+        display: none;
     }
 
     h1 {
@@ -372,15 +376,11 @@ h3 {
 
     .projects {
         width: 100%;
+        margin-top: 70px;
     }
 
-    .project img {
-        max-width: 100%;
-    }
 
-    #project4 {
-        width: 100%;
-    }
+
 
     .technologies {
         margin: 10px 0 10px 0;
