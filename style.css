@@ -15,15 +15,63 @@ body:not(.loaded) #slider img {
 
 
 body {
-    font-family: 'Awesome', sans-serif;
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     height: 100%;
     color: #000000;
     /* color: #fff; */
     margin: 0;
-    background: rgb(237, 205, 22) 10%;
+    background: rgba(226, 166, 0, 0.3);
+    /* background: #EEF2F7; */
 
 }
+
+
+
+.box {
+    box-shadow:
+        0 14.3px 14px -6px rgba(0, 0, 0, 0.429),
+        0 114px 326px -6px rgba(0, 0, 0, 0.48);
+
+
+
+
+
+
+    background: rgb(240, 240, 240);
+    border-radius: 20px;
+}
+
+.image-box {
+    box-shadow:
+        0 14.3px 14px -6px rgba(0, 0, 0, 0.429),
+        0 114px 326px -6px rgba(0, 0, 0, 0.48);
+
+
+
+
+
+    background: rgb(240, 240, 240);
+    border-radius: 20px;
+}
+
+.box1 {
+    box-shadow:
+        0 0px 3px rgba(0, 0, 0, 0.223),
+        0 0px 9.1px rgba(0, 0, 0, 0.295),
+        0 0px 21.4px rgba(0, 0, 0, 0.339),
+        0 0px 47.6px rgba(0, 0, 0, 0.368),
+        0 0px 111.1px rgba(0, 0, 0, 0.385),
+        0 0px 500px rgba(0, 0, 0, 0.38);
+
+
+
+
+
+    background: rgb(240, 240, 240);
+    border-radius: 20px;
+}
+
 
 .container {
 
@@ -50,19 +98,17 @@ body {
 .displayed-text {
     font-size: 1.2em;
     opacity: 1;
+
 }
 
-h1 {
-    font-size: 3em;
-}
 
-h3 {
-    font-size: 2.3em;
-}
 
 .navbar {
     display: flex;
     width: 100%;
+    background: rgba(226, 166, 0, 1);
+    border-radius: 0 0 10px 10px;
+
     /* justify-content: center; */
     /* align-items: center; */
 }
@@ -84,8 +130,7 @@ h3 {
     display: flex;
     /* justify-content: center; */
     margin: 20px 20px;
-    padding: 5px;
-    line-height: 70px;
+    margin-left: 50px;
 }
 
 .menu a {
@@ -135,15 +180,10 @@ label {
 
 .intro {
     display: flex;
-    /* margin: 10px; */
-    background-color: rgba(0, 0, 0, 0.03);
+    margin: 20px;
     padding: 20px;
-    border-radius: 25px;
-    width: 70%;
-
-    justify-content: center;
+    width: 67%;
     align-items: center;
-    color: #000000;
     /* align-items: center; */
     /* font-size: 2rem; */
     /* align-items: center; */
@@ -151,12 +191,26 @@ label {
 }
 
 .intro img {
-
     width: 150px;
-
     margin: 10px;
     padding: 10px;
     border-radius: 300px;
+}
+
+.intro-text {
+    width: 100%;
+}
+
+.text {
+    text-align: end;
+    font-size: 4em;
+    max-width: 100%;
+}
+
+.text-h2 {
+    text-align: end;
+    font-size: 2.3em;
+    max-width: 100%;
 }
 
 
@@ -164,11 +218,11 @@ label {
 
 .projects {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.1);
+
     padding: 20px;
 
 
@@ -178,18 +232,15 @@ label {
 
 }
 
-.project {}
 
 
 .projects img {
 
 
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 10px 0 10px 0;
-    border: 2px #000000;
-    border: 2px solid black;
-    max-width: 100%;
+    width: 95%;
 }
 
 
@@ -201,22 +252,23 @@ label {
 }
 
 .technologies {
-
+    display: flex;
     margin: 10px;
-    background-color: rgba(0, 0, 0, 0.03);
+
     padding: 20px;
     border-radius: 25px;
-    width: 70%;
+    width: 50%;
+    height: 90vh;
 }
 
 /* ABOUT ME */
 
 .about-me {
     margin: 10px;
-    background-color: rgba(0, 0, 0, 0.03);
+    height: 90vh;
     padding: 20px;
     border-radius: 25px;
-    width: 70%;
+    width: 50%;
     /* opacity: 0.2; */
     /* display: flex; */
     /* flex-wrap: wrap; */
@@ -232,11 +284,13 @@ label {
 /*CONTACT*/
 
 .contact {
+
     margin: 10px;
-    background-color: rgba(0, 0, 0, 0.03);
+
     padding: 20px;
     border-radius: 25px;
-    width: 70%;
+    width: 50%;
+    height: 90vh;
 }
 
 #mail {
@@ -270,6 +324,8 @@ label {
 .image {
     position: relative;
     width: 400px;
+
+
 }
 
 .image__img {
@@ -340,7 +396,22 @@ label {
         margin: 10px 0 10px 0;
     }
 
-    .navbar {}
+    .image-box {
+        box-shadow:
+            0 0px 3px rgba(0, 0, 0, 0.223),
+            0 0px 9.1px rgba(0, 0, 0, 0.295),
+            0 0px 21.4px rgba(0, 0, 0, 0.339),
+            0 0px 47.6px rgba(0, 0, 0, 0.368),
+            0 0px 111.1px rgba(0, 0, 0, 0.385),
+            0 0px 500px rgba(0, 0, 0, 0.38);
+
+
+
+
+
+        background: rgb(240, 240, 240);
+        border-radius: 20px;
+    }
 
     label {
         display: block;
@@ -374,9 +445,11 @@ label {
         font-size: 1.8em;
     }
 
+    /*projects here is not working so gonna have to sort that */
     .projects {
         width: 100%;
-        margin-top: 70px;
+        line-height: 300px;
+        margin: 10px 0 10px 0;
     }
 
 
@@ -416,6 +489,7 @@ label {
     /* } */
 
     .contact {
-        width: 80%;
+        margin: 10px 0 10px 0;
+        width: 100%;
     }
 }

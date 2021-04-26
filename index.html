@@ -17,7 +17,7 @@
     <body onload="document.body.classList.add('loaded')">
         <div class="container">
 
-            <nav id="navbar" class="navbar">
+            <nav id="navbar" class="navbar ">
                 
                 <label for="toggle">&#9776;</label>
                 <input type="checkbox" id="toggle">
@@ -25,7 +25,7 @@
                     <div class="menu">
                     <a href="/"><img id="logo" onClick="switchActiveClass('main')" src="/favicon.svg" alt="logo"></a>
 
-                    <a onClick="switchActiveClass('projects')" id="projects-button">Projects</a>
+                    <a  onClick="switchActiveClass('projects')" id="projects-button">Projects</a>
 
                     <a onClick="switchActiveClass('technologies')">Technologies</a>
 
@@ -41,38 +41,23 @@
                 
             </nav>
 
-            <div class="panel active intro" id="intro-photo-and-text">
-                <div class="image"><img id="photo-of-michal-wlodarski" src="/photo_of_michal_wlodarski.png" alt="photo-of-michal-wlodarski"></div>
-                <div class="text"><h1>Hey, I'm Michal Wlodarski, and I'm a web developer.</h1><h2>I like to build stuff, and solve problems. <a id="contact-text" onClick="switchActiveClass('contact')">Email me </a></h2></div>          
+            <div class="panel active intro " id="intro-photo-and-text">
+                <div><img class="image image-" id="photo-of-michal-wlodarski" src="/photo_of_michal_wlodarski.png" alt="photo-of-michal-wlodarski"></div>
+                <div class="intro-text"><h1 class="text">Hey, I'm Michal Wlodarski, and I'm a web developer.</h1><h2 class="text-h2">I like to build stuff, and solve problems.</h2></div>          
             </div>
         
-            <div id="projects" class="panel active projects">
-                <img src="/project_photos/Brainteaser.svg" alt="Project-Trivia-Game">
-                <img src="/project_photos/dashNet.svg" alt="project-cisco-management-website">
-                <img src="/project_photos/travelbucket.svg" alt="project-travel-bucket-list">
-                <img src="/project_photos/AndroidCalculator.svg" alt="project-android-calculator">
-
-                <div id="projects" class="panel active projects image">
-                    <img class="image__img" src="project_photos/androidcalculator.svg" alt="Bricks">
-                    <div class="image__overlay image__overlay--primary">
-                        <div class="image__title">Bricks</div>
-                        <p class="image__description">
-                            Here we have a brick wall.
-                        </p>
-                    </div>
-                    <img class="image__img" src="project_photos/androidcalculator.svg" alt="Bricks">
-                    <div class="image__overlay image__overlay--primary">
-                        <div class="image__title">Bricks</div>
-                        <p class="image__description">
-                            Here we have a brick wall.
-                        </p>
-                    </div>
-                </div>
+            <div class="panel active projects " id="projects">
+                <img class="box" src="/project_photos/Brainteaser.svg" alt="Project-Trivia-Game">
+                <img class="box" src="/project_photos/dashNet.svg" alt="project-cisco-management-website">
+                <img class="box" src="/project_photos/travelbucket.svg" alt="project-travel-bucket-list">
+                <img class="box" src="/project_photos/AndroidCalculator.svg" alt="project-android-calculator">
 
             </div>
+
+
             
 
-            <div class="panel technologies" id="technologies">
+            <div class="panel technologies " id="technologies">
                 <h3>Technologies that I'm familiar with:</h3> 
                 <p class="displayed-text">• Programming languages:<br>
                 Ruby, HTML, CSS3, JavaScript, Java, Python, Kotlin, XML<br>
@@ -87,7 +72,7 @@
                 </h3>
             </div>
                 
-            <div class="panel about-me" id="about-me">
+            <div class="panel about-me " id="about-me">
                 <h3>About me</h3> 
                 <p class="displayed-text">
                     I was born in Poland, I moved quite a lot, looking for my place and better future. I started with programming when still Pokemon cards were a thing, but I couldn't grasp it back then. I tried one more time in 2014, signing myself to University, for Computer Science course, but I couldn't sustain myself financially. Finally in 2016 I fled to Edinburgh, Scotland and stayed there for almost 5 years. During this time I did some courses for programmers (Java, Full Stack Web), and when was ready for the market, Covid-19 came through, and we all stayed put. <br>
@@ -103,12 +88,12 @@
                     I am looking for company that I can help grow as a Junior Web Developer. Or alternatively I might take some Freelance projects. I'm currently working on some local businesses websites. We can meet for a coffee, online or in 2 meters distance and chat about it.   <br><br>
                 </p>
             </div>
-            <div class="panel contact" id="contact">
+            <div class="panel contact " id="contact">
                 <h3>Contact</h3>
                 <p class="displayed-text"> <br>
                     I'm based currently in Krefeld, Germany. 
                     My German is <strong>A2.1</strong> (working on it!), my English is <strong>C2</strong>, Polish <strong>native</strong>.
-                    You can contact me through <a id="mail" href="mailto:wlodarski.michal@pm.me">wlodarski.michal@pm.me</a>.</p>
+                    You can contact me through <a id="mail" href="mailto:wlodarski.michal@pm.me">wlodarski.michal@pm.me</a>.LinkedIn or Github. We can schedule a phone call or Zoom call.</p>
             </div>
         
 
