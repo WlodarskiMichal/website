@@ -330,6 +330,10 @@ label {
         height: 40px;
     }
 
+    .project .project-text {
+        display: none;
+    }
+
     .menu {
         display: flex;
         width: 100%;
