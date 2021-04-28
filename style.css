@@ -74,6 +74,10 @@ body {
 
 }
 
+h3 {
+    font-size: 2em;
+}
+
 .navbar {
     display: flex;
     width: 100%;
@@ -196,18 +200,20 @@ label {
 
 /* TECHNOLOGIES */
 
-.technologies h3 {
-    margin: 20px
-}
-
 .technologies {
-    display: flex;
     margin: 10px;
-
+    height: 90vh;
     padding: 20px;
     border-radius: 25px;
     width: 50%;
-    height: 90vh;
+}
+
+
+
+.technologies img {
+    margin: 4px;
+    width: 20px;
+    height: auto;
 }
 
 /* ABOUT ME */
@@ -232,12 +238,14 @@ label {
     height: 90vh;
 }
 
-#mail {
-    color: #000000;
+
+
+.displayed-text a {
+    color: green;
     text-decoration: none;
 }
 
-#mail:hover {
+.displayed-text a:hover {
     color: #fff;
 }
 
@@ -264,18 +272,38 @@ label {
 
     label {
         display: block;
+        position: fixed;
+        top: 0px;
+        right: 0px;
         cursor: pointer;
+        width: 40px;
+        height: 40px;
     }
 
+
     .menu {
+
+        display: flex;
+        justify-content: center;
         text-align: center;
         width: 100%;
         display: none;
     }
 
     .menu a {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin: 0;
+        margin-right: 25px;
+    }
+
+    .menu:first-child>a {
+        margin-right: auto;
+    }
+
+    .menu:last-child>a {
+        margin-left: auto;
     }
 
     #toggle:checked+.menu {
