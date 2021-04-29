@@ -25,7 +25,6 @@ body {
         0 14.3px 14px -6px rgba(0, 0, 0, 0.429),
         0 114px 326px -6px rgba(0, 0, 0, 0.48);
     background: rgb(240, 240, 240);
-    /* border-radius: 20px; */
 }
 
 
@@ -230,6 +229,12 @@ label {
     height: 90vh;
     padding: 20px;
     width: 50%;
+}
+
+#about-me-photo {
+    width: 100%;
+    border-radius: 25px;
+    margin: 10px 0 10px 0;
 }
 
 /*CONTACT*/
