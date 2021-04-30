@@ -85,6 +85,8 @@ h3 {
     display: flex;
     margin: 20px 20px;
     margin-left: 50px;
+
+
 }
 
 .menu a {
@@ -325,12 +327,19 @@ label {
         margin: 10px 0 10px 0;
     }
 
+    #logo {
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        width: 40px;
+        height: 40px;
+    }
+
     label {
         display: block;
         position: absolute;
         top: 0px;
         right: 0px;
-        cursor: pointer;
         width: 40px;
         height: 40px;
     }
@@ -340,9 +349,12 @@ label {
     }
 
     .menu {
-        display: flex;
+        display: block;
         width: 100%;
-        display: none;
+        /* display: none; */
+        overflow: hidden;
+        height: 1px;
+        transition: height 1s ease-in-out;
     }
 
     .menu a {
@@ -353,8 +365,9 @@ label {
         margin-right: 25px;
     }
 
-    #toggle:checked+.menu {
+    #toggle:checked~.menu {
         display: block;
+        height: 250px;
     }
 
     #contact-nav-bar {
@@ -372,6 +385,10 @@ label {
     .projects {
         width: 100%;
         margin: 10px 0 10px 0;
+    }
+
+    #projects {
+        margin-top: 50px;
     }
 
     .technologies {
